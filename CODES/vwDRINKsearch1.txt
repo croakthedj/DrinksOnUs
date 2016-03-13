@@ -1,0 +1,5 @@
+SELECT dbo.tblDrinks.Name, dbo.tblDrinks.Directions, dbo.tblCategory.Category, dbo.tblDrinksIng.Amount, dbo.tblingredients.Ingredients
+FROM     dbo.tblDrinks INNER JOIN
+                  dbo.tblCategory ON dbo.tblDrinks.fkCategory = dbo.tblCategory.pkID INNER JOIN
+                  dbo.tblDrinksIng ON dbo.tblDrinks.pkID = dbo.tblDrinksIng.fkDrinkID INNER JOIN
+                  dbo.tblingredients ON dbo.tblDrinksIng.fkIngID = dbo.tblingredients.pkID

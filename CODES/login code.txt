@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.OleDb;
+using System.Data.SqlClient;
+
+namespace DrinkOMatic
+{
+    public partial class Login : Form
+    {
+        //SqlConnection con = new SqlConnection();
+        public Login()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=DESKTOP-OMOR6IS\\SCHOOLSERVER;Initial Catalog=FInal;Integrated Security=True";
+
+            InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'sTUDENTDataSet.login' table. You can move, or remove it, as needed.  
+            //this.loginTableAdapter.Fill(this.sTUDENTDataSet.login);  
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-OMOR6IS\\SCHOOLSERVER;Initial Catalog=FInal;Integrated Security=True");
+            con.Open();
+
+            {
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            {
+                new Form1().Show();
+                this.Hide();
+
+            }
+
+            //look this over
+
+           // SqlConnection con = new SqlConnection();
+           // con.ConnectionString = "Data Source=DESKTOP-OMOR6IS\\SCHOOLSERVER;Initial Catalog=FInal;Integrated Security=True";
+           // con.Open();
+           // string userid = textBox1.Text;
+           // string password = textBox2.Text;
+           // SqlCommand cmd = new SqlCommand ("Select * FROM tblUsers WHERE Users = '" + userid + "' AND Password = '" + password + "'");
+           // SqlDataAdapter da = new SqlDataAdapter(cmd);
+           // DataTable dt = new DataTable();
+           // da.Fill(dt);
+           // if (dt.Rows.Count > 0)
+           // {
+           //     MessageBox.Show("WAY To GO");
+           //     System.Diagnostics.Process.Start("http://youtube.com/croakthedj");
+           // }
+           // else
+           // {
+           //     MessageBox.Show("Invalid Login please check username and password");
+           // }
+           //con.Close();
+        }
+
+
+
+        private void button_2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
+}
+//....................../´¯/)
+//....................,/¯../ 
+//.................../..../ 
+//............./´¯/'...'/´¯¯`·¸ 
+//........../'/.../..../......./¨¯\ 
+//........('(...´...´.... ¯~/'...') 
+//.........\.................'...../ 
+//..........''...\.......... _.·´ 
+//............\..............( 
+//..............\.............\...

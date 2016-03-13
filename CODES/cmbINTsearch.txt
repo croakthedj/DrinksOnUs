@@ -1,0 +1,3 @@
+SELECT dbo.tblingredients.Ingredients, dbo.tblDrinksIng.Amount
+FROM     dbo.tblDrinksIng INNER JOIN
+                  dbo.tblingredients ON dbo.tblDrinksIng.fkIngID = dbo.tblingredients.pkID

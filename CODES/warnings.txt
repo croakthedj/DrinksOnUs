@@ -1,0 +1,4 @@
+Warning 1 Processing COM reference "WMPLib" from path "C:\WINDOWS\system32\wmp.dll". Type library importer encountered a property getter 'sessionPlaylistCount' on type 'WMPLib.IWMPNowPlayingHelperDispatch' without a valid return type. The importer will attempt to import this property as a method instead. DrinkOMatic
+
+
+
